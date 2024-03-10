@@ -1,0 +1,32 @@
+.active-tabbbb {
+    color: #fff !important ; /* Add a left border to the active tab */
+   border-radius: 0px 30px 25px 0px;
+    background-color: #C54FE8 !important;
+    /* padding-right: 10px;
+     */
+     width: 120%;
+  }
+  .active-icons {
+      filter: brightness(0) invert(1);
+  
+  
+  }
+  .tab-btn{
+    font-size: 13px !important;
+  }
+  
+  
+  @media only screen and (max-width: 600px) {
+    .mobileflex {
+      flex-direction: column !important;
+    }
+    .mobilesidebartext {
+      font-size: 12px;
+      padding-top: 3px;
+      padding-left: 2px;
+    }
+    .active-tabbbb{
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+    }
+  }
