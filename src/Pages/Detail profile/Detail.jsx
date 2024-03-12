@@ -10,7 +10,7 @@ const Detail = () => {
     <>
           <Container fluid>
       <Row>
-        <Col xs={2} md={2} className="border ps-0">
+        <Col xs={2} md={2} className=" ps-0">
           <Sidebar activeTab="EmergeProfile" />
         </Col>
         <Col xs={10} md={10} style={{ backgroundColor: "#FAFBFF" }}>

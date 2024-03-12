@@ -11,7 +11,14 @@ const EmergeTable = () => {
         { id: 4, profileName: 'Jane Smith', profileID: '67890', email: 'jane.smith@example.com', country: 'UK', zipCode: '54321', followers: 1500, following: 700, posts: 80, profileCreationDate: '2022-04-15', action: 'edit' },
         { id: 5, profileName: 'John Doe', profileID: '12345', email: 'john.doe@example.com', country: 'USA', zipCode: '12345', followers: 1000, following: 500, posts: 50, profileCreationDate: '2022-03-10', action: 'edit' },
         { id: 6, profileName: 'Jane Smith', profileID: '67890', email: 'jane.smith@example.com', country: 'UK', zipCode: '54321', followers: 1500, following: 700, posts: 80, profileCreationDate: '2022-04-15', action: 'edit' },
-        // Add more dummy data for 20 persons
+      ,
+      { id: 7, profileName: 'John Doe', profileID: '12345', email: 'john.doe@example.com', country: 'USA', zipCode: '12345', followers: 1000, following: 500, posts: 50, profileCreationDate: '2022-03-10', action: 'edit' },
+      { id: 8, profileName: 'Jane Smith', profileID: '67890', email: 'jane.smith@example.com', country: 'UK', zipCode: '54321', followers: 1500, following: 700, posts: 80, profileCreationDate: '2022-04-15', action: 'edit' },
+      { id: 9, profileName: 'John Doe', profileID: '12345', email: 'john.doe@example.com', country: 'USA', zipCode: '12345', followers: 1000, following: 500, posts: 50, profileCreationDate: '2022-03-10', action: 'edit' },
+      { id: 10, profileName: 'Jane Smith', profileID: '67890', email: 'jane.smith@example.com', country: 'UK', zipCode: '54321', followers: 1500, following: 700, posts: 80, profileCreationDate: '2022-04-15', action: 'edit' },
+      { id: 11, profileName: 'John Doe', profileID: '12345', email: 'john.doe@example.com', country: 'USA', zipCode: '12345', followers: 1000, following: 500, posts: 50, profileCreationDate: '2022-03-10', action: 'edit' },
+      { id: 12, profileName: 'Jane Smith', profileID: '67890', email: 'jane.smith@example.com', country: 'UK', zipCode: '54321', followers: 1500, following: 700, posts: 80, profileCreationDate: '2022-04-15', action: 'edit' },
+      // Add more dummy data for 20 persons
     ];
     return (
         <>

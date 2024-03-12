@@ -11,6 +11,9 @@
 .pricolor {
   color: #C54FE8 !important;
 }
+.border{
+  border-color: #C54FE8 !important;
+}
 .pribg{
   background-color: #C54FE8 !important;
 }
@@ -39,14 +42,20 @@ input {
   margin-left: 8px !important;
 
 }
-.td{
+td{
   /* text-decoration: none; */
   border-bottom: none;
+  text-wrap: nowrap !important;
+  gap: 20px !important;
 
 }
 
 a{
   text-decoration: none !important;
   padding: 0 !important;
+  color: black;
+
+}
+p{
 
 }

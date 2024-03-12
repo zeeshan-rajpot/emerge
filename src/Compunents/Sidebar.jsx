@@ -11,8 +11,8 @@ const Sidebar = (props) => {
   const navItems = [
     { id: "Dashboard", text: "Dashboard", icon: "Group 68037"   , link: "/"},
     { id: "EmergeProfile", text: "Emerge Profile", icon: "Emerge Profile" , link :'/EmergeProfile'},
-    { id: "CreatorProfile", text: "My Creator Profile", icon: "My Creator Profile"  , link: "/Disapproved"},
-    { id: "Feedback", text: "Feedback", icon: "Feedback" ,link:'/Pharmacy' },
+    { id: "Creatoprofile", text: "My Creator Profile", icon: "My Creator Profile"  , link: "/Creatoprofile"},
+    { id: "Feedback", text: "Feedback", icon: "Feedback" ,link:'/Feedback' },
     { id: "Support", text: "Support", icon: "Support" ,link:'/Pharmacy' },
     { id: "Live", text: "Live", icon: "podcast-icon" ,link:'/Pharmacy' },
     { id: "Private Chat", text: "Private Chat", icon: "Private Chat" ,link:'/Pharmacy' },
@@ -55,7 +55,7 @@ const Sidebar = (props) => {
             activeTab === item.id ? "active-tabbbb" : "tab-btn"
           }`}
         >
-          <b>{item.text}</b>
+        {item.text}
         </p>
 
     </div>

@@ -6,6 +6,9 @@ import './App.css'
 import Dashboard from './Pages/Dashboard';
 import EmergeProfile from './Pages/Emerge Profile';
 import Detail from './Pages/Detail profile/Detail';
+import Creatoprofile from './Pages/Creator profile';
+import Feedback from './Pages/Feedback/Feedback';
+import DetailPageFeedback from './Pages/Feedback/Detailpage/DetailPage';
 
 function App() {
  
@@ -18,6 +21,10 @@ function App() {
         <Route path="/" element={<Dashboard />} />
         <Route path="/EmergeProfile" element={<EmergeProfile />} />
         <Route path="/Detail" element={<Detail />} />
+        <Route path="/Creatoprofile" element={<Creatoprofile />} />
+        <Route path="/Feedback" element={<Feedback />} />
+        <Route path="/DetailPageFeedback" element={<DetailPageFeedback/>} />
+        
         
         
       </Routes>
