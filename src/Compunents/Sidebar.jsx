@@ -9,9 +9,9 @@ const Sidebar = (props) => {
   const [modalShow, setModalShow] = useState(false);
 
   const navItems = [
-    { id: "Dashboard", text: "Dashboard", icon: "Group 68037"   , link: "/Dashboard"},
+    { id: "Dashboard", text: "Dashboard", icon: "Group 68037"   , link: "/"},
+    { id: "EmergeProfile", text: "Emerge Profile", icon: "Emerge Profile" , link :'/EmergeProfile'},
     { id: "CreatorProfile", text: "My Creator Profile", icon: "My Creator Profile"  , link: "/Disapproved"},
-    { id: "EmergeProfile", text: "Emerge Profile", icon: "Emerge Profile" , link :'/Dotor'},
     { id: "Feedback", text: "Feedback", icon: "Feedback" ,link:'/Pharmacy' },
     { id: "Support", text: "Support", icon: "Support" ,link:'/Pharmacy' },
     { id: "Live", text: "Live", icon: "podcast-icon" ,link:'/Pharmacy' },

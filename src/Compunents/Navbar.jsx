@@ -20,9 +20,9 @@ const NavBar = () => {
 
   return (
     <>
-      <Col className="d-flex align-item-center justify-content-between pt-2 pb-3 flex-wrap bg-light" style={{background:'#FFFFFF'}} >
+      <Col className="d-flex align-items-center justify-content-between pt-2 pb-3 flex-wrap bg-light" style={{background:'#FFFFFF'}} >
         <div>
-        <h5 className="p-0 mb-0 ">Hello, David William</h5>
+        <h5 className="p-0 mb-0 pricolor"> David William</h5>
 
         <p className=" mb-0">{formattedDateTime}</p>
 
@@ -30,13 +30,18 @@ const NavBar = () => {
       
       
         <div
-     className="me-3"
+     className="me-3 d-flex align-items-center "
         > 
-         <input type="text" placeholder="Search" className="bg-light w-100"  />
+     <div className="input-container shadow bg-light rounded-5">
+              {/* <FaUser className='icon' /> */}
+ 
+              <input type="text" name='email' placeholder="" className="bg-light" />
+              <img src= "/Filter Icon.png" />
+            </div>
           {/* <FaUser className='icon' /> */}
           <img src="/Component 11 – 1.svg" />
           <img src="/Group 67873.svg" alt="" />
-          <span>David William</span>
+          <span > William</span>
         </div>
       </Col>
     </>

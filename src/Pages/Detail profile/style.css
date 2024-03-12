@@ -1,0 +1,12 @@
+.bg-deaitl{
+    /* height: 100vh; */
+    background-image: url('../../assets/Mask10.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .mobw100{
+        width: 90% !important;
+    }
+  }

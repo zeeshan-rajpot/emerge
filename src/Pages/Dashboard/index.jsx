@@ -17,19 +17,11 @@ const Dashboard = () => {
               <NavBar  className=''/>
             </Row>
             <Row>
-              <Col md={9}>
-                <h4 className="text-center mt-4">
-                  <b>Pending Approvals Await Your Verdict</b>
-                </h4>
+              <Col md={12}>
+               
        
               </Col>
-              <Col
-                md={3}
-                className="border vh-100"
-                style={{ backgroundColor: "#FAFBFF" }}
-              >
-              
-              </Col>
+            
             </Row>
           </Col>
         </Row>
