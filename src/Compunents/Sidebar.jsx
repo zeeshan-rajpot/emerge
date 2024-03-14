@@ -17,9 +17,9 @@ const Sidebar = (props) => {
     { id: "Live", text: "Live", icon: "podcast-icon" ,link:'/Live' },
     { id: "Private Chat", text: "Private Chat", icon: "Private Chat" ,link:'/Pharmacy' },
     { id: "ProductListing", text: "Product Listing", icon: "Product Listing" ,link:'/ProductListing' },
-    { id: "Listing Approvals", text: "Listing Approvals", icon: "Listing Approvals" ,link:'/Pharmacy' },
+    { id: "ListingApproval", text: "Listing Approvals", icon: "Listing Approvals" ,link:'/ListingApproval' },
     { id: "Magzine", text: "Magzine", icon: "M" ,link:'/Pharmacy' },
-    { id: "Orders", text: "Orders", icon: "Orders" ,link:'/Pharmacy' },
+    { id: "Order", text: "Orders", icon: "Orders" ,link:'/Order' },
     
   ];
 

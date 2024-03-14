@@ -12,6 +12,8 @@ import DetailPageFeedback from './Pages/Feedback/Detailpage/DetailPage';
 import Notification from './Pages/Notification/Notification';
 import Live from './Pages/Live/Live';
 import ProductListing from './Pages/Product Listing/ProductListing';
+import ListingApproval from './Pages/Listing Approvals/ListingApproval';
+import Order from './Pages/Magzine/Order';
 
 function App() {
  
@@ -30,6 +32,8 @@ function App() {
         <Route path="/Notification" element={<Notification/>} />
         <Route path="/Live" element={<Live/>} />
         <Route path="/ProductListing" element={<ProductListing/>} />
+        <Route path="/ListingApproval" element={<ListingApproval/>} />
+        <Route path="/Order" element={<Order/>} />
         
       </Routes>
     </BrowserRouter>
