@@ -14,9 +14,9 @@ const Sidebar = (props) => {
     { id: "Creatoprofile", text: "My Creator Profile", icon: "My Creator Profile"  , link: "/Creatoprofile"},
     { id: "Feedback", text: "Feedback", icon: "Feedback" ,link:'/Feedback' },
     { id: "Support", text: "Support", icon: "Support" ,link:'/Pharmacy' },
-    { id: "Live", text: "Live", icon: "podcast-icon" ,link:'/Pharmacy' },
+    { id: "Live", text: "Live", icon: "podcast-icon" ,link:'/Live' },
     { id: "Private Chat", text: "Private Chat", icon: "Private Chat" ,link:'/Pharmacy' },
-    { id: "Product Listing", text: "Product Listing", icon: "Product Listing" ,link:'/Pharmacy' },
+    { id: "ProductListing", text: "Product Listing", icon: "Product Listing" ,link:'/ProductListing' },
     { id: "Listing Approvals", text: "Listing Approvals", icon: "Listing Approvals" ,link:'/Pharmacy' },
     { id: "Magzine", text: "Magzine", icon: "M" ,link:'/Pharmacy' },
     { id: "Orders", text: "Orders", icon: "Orders" ,link:'/Pharmacy' },
@@ -46,12 +46,13 @@ const Sidebar = (props) => {
         <img
           src={`/${item.icon}.svg`}
           alt={`${item.text} Icon`}
+          style={{width:'15px'}}
           className={` ${activeTab === item.id ? "active-icons" : ""}`}
         />
     
 
         <p
-          className={`ps-2 pt-2 pb-2 pb-0 mb-0 mt-0 text-secondary d-none d-md-flex ${
+          className={`ps-2 pt-1 pb-1 pb-0 mb-0 mt-0 text-secondary d-none d-md-flex ${
             activeTab === item.id ? "active-tabbbb" : "tab-btn"
           }`}
         >

@@ -9,6 +9,9 @@ import Detail from './Pages/Detail profile/Detail';
 import Creatoprofile from './Pages/Creator profile';
 import Feedback from './Pages/Feedback/Feedback';
 import DetailPageFeedback from './Pages/Feedback/Detailpage/DetailPage';
+import Notification from './Pages/Notification/Notification';
+import Live from './Pages/Live/Live';
+import ProductListing from './Pages/Product Listing/ProductListing';
 
 function App() {
  
@@ -24,8 +27,9 @@ function App() {
         <Route path="/Creatoprofile" element={<Creatoprofile />} />
         <Route path="/Feedback" element={<Feedback />} />
         <Route path="/DetailPageFeedback" element={<DetailPageFeedback/>} />
-        
-        
+        <Route path="/Notification" element={<Notification/>} />
+        <Route path="/Live" element={<Live/>} />
+        <Route path="/ProductListing" element={<ProductListing/>} />
         
       </Routes>
     </BrowserRouter>

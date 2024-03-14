@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [currentDate, setCurrentDate] = useState(new Date());
@@ -39,7 +40,9 @@ const NavBar = () => {
               <img src= "/Filter Icon.png" />
             </div>
           {/* <FaUser className='icon' /> */}
+          <Link to='/Notification'>
           <img src="/Component 11 – 1.svg" />
+          </Link>
           <img src="/Group 67873.svg" alt="" />
           <span > William</span>
         </div>

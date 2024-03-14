@@ -34,6 +34,9 @@
   padding-right: 10px;
   color: #666;
 }
+tr{
+  text-wrap: nowrap !important;
+}
 
 input {
   border: none;
@@ -47,7 +50,7 @@ td{
   border-bottom: none;
   text-wrap: nowrap !important;
   gap: 20px !important;
-
+padding: 10px !important;
 }
 
 a{
