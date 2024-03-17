@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+import All from './All';
+import Active from './Active';
+import Cancelled from './Cancelled';
+import Complete from './Complete';
 
 const Tabbtnorder = () => {
     const [selectedTab, setSelectedTab] = useState('All');
@@ -71,26 +75,26 @@ const Tabbtnorder = () => {
                 {selectedTab === 'All' ? (
                     <>
                         {/* Render All component */}
-                        {/* <All /> */}
-                        ssssffff
+                        <All />
+                        
                     </>
                 ) : selectedTab === 'Active' ? (
                     <>
                         {/* Render Active component */}
-                        {/* <Active /> */}
-                        ssss
+                        <Active />
+                        
                     </>
                 ) : selectedTab === 'Completed' ? (
                     <>
                         {/* Render Completed component */}
-                        {/* <Completed /> */}
-                        ssssssss
+                        <Complete />
+                        
                     </>
                 ): (
                     <>
                         {/* Render Completed component */}
-                        {/* <Completed /> */}
-                        sssssdsafweff
+                        <Cancelled />
+                        
                     </>
                 )}
             </div>
