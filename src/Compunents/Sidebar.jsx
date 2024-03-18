@@ -1,26 +1,55 @@
-import React, { useState } from "react";
-import "./Sidebar.css";
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import './Sidebar.css';
 
 // import MyVerticallyCenteredModal from "./verticalModal";
 
-const Sidebar = (props) => {
+const Sidebar = props => {
   const [activeTab, setActiveTab] = useState(props.activeTab);
   const [modalShow, setModalShow] = useState(false);
 
   const navItems = [
-    { id: "Dashboard", text: "Dashboard", icon: "Group 68037"   , link: "/"},
-    { id: "EmergeProfile", text: "Emerge Profile", icon: "Emerge Profile" , link :'/EmergeProfile'},
-    { id: "Creatoprofile", text: "My Creator Profile", icon: "My Creator Profile"  , link: "/Creatoprofile"},
-    { id: "Feedback", text: "Feedback", icon: "Feedback" ,link:'/Feedback' },
-    { id: "Support", text: "Support", icon: "Support" ,link:'/Pharmacy' },
-    { id: "Live", text: "Live", icon: "podcast-icon" ,link:'/Live' },
-    { id: "Chat", text: "Private Chat", icon: "Private Chat" ,link:'/Chat' },
-    { id: "ProductListing", text: "Product Listing", icon: "Product Listing" ,link:'/ProductListing' },
-    { id: "ListingApproval", text: "Listing Approvals", icon: "Listing Approvals" ,link:'/ListingApproval' },
-    { id: "Magzine", text: "Magzine", icon: "M" ,link:'/Pharmacy' },
-    { id: "Order", text: "Orders", icon: "Orders" ,link:'/Order' },
-    
+    {
+      id: 'Dashboard',
+      text: 'Dashboard',
+      icon: 'Group 68037',
+      link: '/Dashboard',
+    },
+    {
+      id: 'EmergeProfile',
+      text: 'Emerge Profile',
+      icon: 'Emerge Profile',
+      link: '/EmergeProfile',
+    },
+    {
+      id: 'Creatoprofile',
+      text: 'My Creator Profile',
+      icon: 'My Creator Profile',
+      link: '/Creatoprofile',
+    },
+    { id: 'Feedback', text: 'Feedback', icon: 'Feedback', link: '/Feedback' },
+    { id: 'Support', text: 'Support', icon: 'Support', link: '/Support' },
+    { id: 'Live', text: 'Live', icon: 'podcast-icon', link: '/Live' },
+    {
+      id: 'Chat',
+      text: 'Private Chat',
+      icon: 'Private Chat',
+      link: '/ChatMain',
+    },
+    {
+      id: 'ProductListing',
+      text: 'Product Listing',
+      icon: 'Product Listing',
+      link: '/ProductListing',
+    },
+    {
+      id: 'ListingApproval',
+      text: 'Listing Approvals',
+      icon: 'Listing Approvals',
+      link: '/ListingApproval',
+    },
+    { id: 'Magzine', text: 'Magzine', icon: 'M', link: '/Magzine' },
+    { id: 'Order', text: 'Orders', icon: 'Orders', link: '/Order' },
   ];
 
   //   , link: "/Dashbord"
@@ -28,63 +57,60 @@ const Sidebar = (props) => {
   //   , link: "/Doctor"
   //   , link: "/Pharmacy"
 
-  const handleTabClick = (tab) => {
+  const handleTabClick = tab => {
     setActiveTab(tab);
   };
 
-  const renderNavItem = (item) => (
+  const renderNavItem = item => (
     <Link to={item.link}>
-   
-    <div
-      key={item.id}
-      className={`d-flex align-items-center justify-content-start mt-2 ps-4 ${
-        activeTab === item.id ? "active-tabbbb" : ""
-      }`}
-      onClick={() => handleTabClick(item.id)}
-    >
-    
+      <div
+        key={item.id}
+        className={`d-flex align-items-center justify-content-start mt-2 ps-4 ${
+          activeTab === item.id ? 'active-tabbbb' : ''
+        }`}
+        onClick={() => handleTabClick(item.id)}
+      >
         <img
           src={`/${item.icon}.svg`}
           alt={`${item.text} Icon`}
-          style={{width:'15px'}}
-          className={` ${activeTab === item.id ? "active-icons" : ""}`}
+          style={{ width: '15px' }}
+          className={` ${activeTab === item.id ? 'active-icons' : ''}`}
         />
-    
 
         <p
           className={`ps-2 pt-1 pb-1 pb-0 mb-0 mt-0 text-secondary d-none d-md-flex ${
-            activeTab === item.id ? "active-tabbbb" : "tab-btn"
+            activeTab === item.id ? 'active-tabbbb' : 'tab-btn'
           }`}
         >
-        {item.text}
+          {item.text}
         </p>
-
-    </div>
+      </div>
     </Link>
   );
 
   return (
     <>
-      <div className="mobilenone">
+      <div className='mobilenone'>
         <div
-          className="d-flex align-items-start justify-content-between flex-column pt-3"
-          style={{ minHeight: "100vh" }}
+          className='d-flex align-items-start justify-content-between flex-column pt-3'
+          style={{ minHeight: '100vh' }}
         >
-          <div >
-            <div className="text-center">
-            <img src="/EMERGE LOGO EPS.png" className="mb-4 text-center ms-auto " />
-
+          <div>
+            <div className='text-center'>
+              <img
+                src='/EMERGE LOGO EPS.png'
+                className='mb-4 text-center ms-auto '
+              />
             </div>
-  
 
-            {navItems.map((item) => renderNavItem(item))}
+            {navItems.map(item => renderNavItem(item))}
           </div>
 
-          <div className=" ps-4 d-flex align-items-start justify-content-start">
-            <img src={`/Log out.svg`} alt="Logout Icon" className={` `} />
+          <div className=' ps-4 d-flex align-items-start justify-content-start'>
+            <img src={`/Log out.svg`} alt='Logout Icon' className={` `} />
             <p
               className={`ps-2 text-secondary d-none d-md-flex`}
-              style={{ cursor: "pointer", textDecoration: "none" }}
+              style={{ cursor: 'pointer', textDecoration: 'none' }}
               onClick={() => setModalShow(true)}
             >
               <b>Log out</b>
