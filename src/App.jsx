@@ -39,7 +39,6 @@ function App() {
           <Route path='/ListingApproval' element={<ListingApproval />} />
           <Route path='/Order' element={<Order />} />
           <Route path='/Magzine' element={<Magzine />} />
-
           <Route path='/ChatMain' element={<ChatMain />} />
           <Route path='/Chatopen' element={<Chatopen />} />
           <Route path='/Support' element={<Support />} />
