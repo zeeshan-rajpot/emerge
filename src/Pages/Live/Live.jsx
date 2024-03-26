@@ -1,7 +1,7 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import Sidebar from '../../Compunents/Sidebar';
+import { Col, Container, Row } from 'react-bootstrap';
 import NavBar from '../../Compunents/Navbar';
+import Sidebar from '../../Compunents/Sidebar';
 import LiveTable from './LiveTable';
 // import Tabbtn from "./Tabbtn";
 
@@ -13,15 +13,24 @@ const Live = () => {
           <Col xs={2} md={2} className=' ps-0'>
             <Sidebar activeTab='Live' />
           </Col>
-          <Col xs={10} md={10} style={{ backgroundColor: '#FAFBFF' }}>
+          <Col
+            xs={10}
+            md={10}
+            style={{
+              backgroundColor: '#FAFBFF',
+              height: '100vh',
+              overflowY: 'auto',
+              overflowX: 'hidden',
+            }}
+          >
             <Row>
               <NavBar className='' />
             </Row>
             <Row>
               <Col
                 md={12}
-                className='p-4 bg-white m-auto mt-4 rounded-5'
-                style={{ width: '90%' }}
+                className='p-4 bg-white m-auto  rounded-5'
+                style={{ width: '98%' }}
               >
                 {/* <Tabbtn/> */}
                 <LiveTable />

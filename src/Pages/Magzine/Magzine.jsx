@@ -10,9 +10,18 @@ const Order = () => {
       <Container fluid>
         <Row>
           <Col xs={2} md={2} className=' ps-0'>
-            <Sidebar activeTab='Order' />
+            <Sidebar activeTab='Magzine' />
           </Col>
-          <Col xs={10} md={10} style={{ backgroundColor: '#FAFBFF' }}>
+          <Col
+            xs={10}
+            md={10}
+            style={{
+              backgroundColor: '#FAFBFF',
+              height: '100vh',
+              overflowY: 'auto',
+              overflowX: 'hidden',
+            }}
+          >
             <Row>
               <NavBar className='' />
             </Row>

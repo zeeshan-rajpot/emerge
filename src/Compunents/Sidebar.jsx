@@ -65,7 +65,7 @@ const Sidebar = props => {
     <Link to={item.link}>
       <div
         key={item.id}
-        className={`d-flex align-items-center justify-content-start mt-2 ps-4 ${
+        className={`d-flex align-items-center justify-content-start  mt-4 mt-md-2 ps-4 ${
           activeTab === item.id ? 'active-tabbbb' : ''
         }`}
         onClick={() => handleTabClick(item.id)}
@@ -90,9 +90,10 @@ const Sidebar = props => {
 
   return (
     <>
-      <div className='mobilenone'>
+      <div className='mobilenone '>
         <div
-          className='d-flex align-items-start justify-content-between flex-column pt-3'
+          className='d-flex align-items-start justify-content-between flex-column pt-
+          4 '
           style={{ minHeight: '100vh' }}
         >
           <div>

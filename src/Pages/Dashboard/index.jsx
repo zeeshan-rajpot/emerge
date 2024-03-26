@@ -8,6 +8,9 @@ import LineChart from './LineChart.jsx';
 import DonutChart from './DonutChart.jsx';
 import MainDonutChart from './MainDonutChart.jsx';
 import LocationMap from './LocationMap.jsx';
+import MainLineChart from './MainLineChart.jsx';
+import Mostviwedpost from './Mostviwedpost.jsx';
+
 const Dashboard = () => {
   return (
     <>
@@ -16,7 +19,7 @@ const Dashboard = () => {
           <Col xs={2} md={2} className=' ps-0'>
             <Sidebar activeTab='Dashboard' />
           </Col>
-          <Col xs={10} md={10} style={{ backgroundColor: '#FAFBFF' }}>
+          <Col xs={10} md={10} style={{ backgroundColor: '#F9F9F9' }}>
             <Row>
               <NavBar className='' />
             </Row>
@@ -61,8 +64,10 @@ const Dashboard = () => {
                   </Col>
                 </Row>
 
-                <Row>
-                  <Col xs={8} md={8}></Col>
+                <Row className='my-4'>
+                  <Col xs={8} md={8}>
+                    <MainLineChart />
+                  </Col>
                   <Col xs={4} md={4}>
                     <MainDonutChart />
                   </Col>
@@ -71,7 +76,9 @@ const Dashboard = () => {
                   <Col xs={5} md={5}>
                     <LocationMap />
                   </Col>
-                  <Col xs={6} md={6}></Col>
+                  <Col xs={6} md={6}>
+                    <Mostviwedpost />
+                  </Col>
                 </Row>
               </Col>
             </Row>

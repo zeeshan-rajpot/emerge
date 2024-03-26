@@ -7,6 +7,11 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+}
+
 #root {}
 
 .pricolor {
@@ -19,6 +24,9 @@
 
 .pribg {
   background-color: #C54FE8 !important;
+}
+.mostpribg {
+  background-color:#F0E5F7!important;
 }
 
 .input-container {
@@ -66,3 +74,11 @@ a {
 }
 
 p {}
+
+
+@media only screen and (max-width: 600px) {
+  .mob {
+    display: none !important;
+  }
+
+}
