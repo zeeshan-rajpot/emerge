@@ -13,11 +13,7 @@ const Tabbtnorder = () => {
     
     return (
         <>
-<<<<<<< HEAD
             <div className=" d-flex justify-content-start align-items-center border-bottom">
-=======
-            <div className="mt-4 d-flex justify-content-start align-items-center border-bottom">
->>>>>>> cfbd9e3955a42140453b023ba28d865a5a41853a
                 <p
                     className="mb-0"
                     style={{

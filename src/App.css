@@ -7,14 +7,11 @@
   font-family: "Poppins", sans-serif;
 }
 
-<<<<<<< HEAD
 body {
   overflow-y: hidden !important;
   overflow-x: hidden !important;
 }
 
-=======
->>>>>>> cfbd9e3955a42140453b023ba28d865a5a41853a
 #root {}
 
 .pricolor {
@@ -28,12 +25,9 @@ body {
 .pribg {
   background-color: #C54FE8 !important;
 }
-<<<<<<< HEAD
 .mostpribg {
   background-color:#F0E5F7!important;
 }
-=======
->>>>>>> cfbd9e3955a42140453b023ba28d865a5a41853a
 
 .input-container {
   display: flex;
@@ -79,7 +73,6 @@ a {
 
 }
 
-<<<<<<< HEAD
 p {}
 
 
@@ -89,6 +82,3 @@ p {}
   }
 
 }
-=======
-p {}
->>>>>>> cfbd9e3955a42140453b023ba28d865a5a41853a

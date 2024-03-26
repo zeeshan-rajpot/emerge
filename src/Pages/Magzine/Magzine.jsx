@@ -10,7 +10,6 @@ const Order = () => {
       <Container fluid>
         <Row>
           <Col xs={2} md={2} className=' ps-0'>
-<<<<<<< HEAD
             <Sidebar activeTab='Magzine' />
           </Col>
           <Col
@@ -23,11 +22,6 @@ const Order = () => {
               overflowX: 'hidden',
             }}
           >
-=======
-            <Sidebar activeTab='Order' />
-          </Col>
-          <Col xs={10} md={10} style={{ backgroundColor: '#FAFBFF' }}>
->>>>>>> cfbd9e3955a42140453b023ba28d865a5a41853a
             <Row>
               <NavBar className='' />
             </Row>
