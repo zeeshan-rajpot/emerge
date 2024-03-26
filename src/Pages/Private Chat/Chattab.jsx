@@ -16,7 +16,11 @@ const Chattab = () => {
   return (
     <>
       <div
+<<<<<<< HEAD
         className=' d-flex justify-content-center align-items-center shadow m-auto w-50 '
+=======
+        className='mt-4 d-flex justify-content-center align-items-center shadow m-auto w-50 '
+>>>>>>> cfbd9e3955a42140453b023ba28d865a5a41853a
         style={{
           backgroundColor: '#FFFFFF',
           borderRadius: '22px',

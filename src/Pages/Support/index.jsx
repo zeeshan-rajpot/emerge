@@ -17,6 +17,7 @@ const index = () => {
           <Col xs={2} md={2} className=' ps-0'>
             <Sidebar activeTab='Support' />
           </Col>
+<<<<<<< HEAD
           <Col
             xs={10}
             md={10}
@@ -27,14 +28,23 @@ const index = () => {
               overflowX: 'hidden',
             }}
           >
+=======
+          <Col xs={10} md={10} style={{ backgroundColor: '#FAFBFF' }}>
+>>>>>>> cfbd9e3955a42140453b023ba28d865a5a41853a
             <Row>
               <NavBar className='' />
             </Row>
             <Row>
               <Col
                 md={12}
+<<<<<<< HEAD
               >
                 <div className='shadow mb-3 mx-3 rounded-4 bg-white  '>
+=======
+                // className=' bg-white  rounded-5'
+              >
+                <div className='shadow m-3 rounded-4 bg-white  mt-4'>
+>>>>>>> cfbd9e3955a42140453b023ba28d865a5a41853a
                   {!isConfirmed && (
                     <div>
                       <div

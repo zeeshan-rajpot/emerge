@@ -6,7 +6,11 @@ export const CardsDetail = ({ logoSrc, title, value, changePercentage, chart }) 
   return (
     <div>
       <div
+<<<<<<< HEAD
         className='d-flex flex-column justify-content-center  align-items-center'
+=======
+        className='d-flex flex-column justify-content-center align-items-center'
+>>>>>>> cfbd9e3955a42140453b023ba28d865a5a41853a
         style={{
           backgroundColor: '#FFFFFF',
           borderRadius: '15px',

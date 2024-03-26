@@ -42,6 +42,10 @@ function App() {
           <Route path='/ChatMain' element={<ChatMain />} />
           <Route path='/Chatopen' element={<Chatopen />} />
           <Route path='/Support' element={<Support />} />
+<<<<<<< HEAD
+=======
+          eeeeee
+>>>>>>> cfbd9e3955a42140453b023ba28d865a5a41853a
         </Routes>
       </BrowserRouter>
     </>
