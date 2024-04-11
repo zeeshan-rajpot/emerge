@@ -35,25 +35,17 @@ const FeedRewies = () => {
       timestamp: '5 Days ago',
       review: 'This app is amazing! Highly recommend it to everyone.',
     },
+
     {
-      name: 'Jane Smith',
-      timestamp: '2 Weeks ago',
-      review:
-        'The user interface could use some improvements, but overall a good experience.',
-    },
-    {
-      name: 'Michael Johnson',
-      timestamp: '1 Month ago',
-      review:
-        'Not satisfied with the service. Will be looking for alternatives.',
+      name: 'John Doe',
+      timestamp: '14 Days ago',
+      review: 'This app is amazing! Highly recommend it to everyone.',
     },
     {
       name: 'John Doe',
-      timestamp: '5 Days ago',
+      timestamp: '5 Month ago',
       review: 'This app is amazing! Highly recommend it to everyone.',
     },
-
-    // Add more reviews as needed
   ];
 
   return (

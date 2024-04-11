@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Chart from 'react-apexcharts';
+import { Col, Row } from 'react-bootstrap';
+import './MainLineChart.css';
 
 export const MainLineChart = () => {
   const [options] = useState({
@@ -66,165 +68,182 @@ export const MainLineChart = () => {
     // Update chart data based on selected values
     // You should replace the following lines with your actual data fetching logic
     const newData = [
-      30, 40, 45, 50, 55, 50, 45, 40, 35, 30, 25, 20 // Sample data, you should replace it with your data
+      30,
+      40,
+      45,
+      50,
+      55,
+      50,
+      45,
+      40,
+      35,
+      30,
+      25,
+      20, // Sample data, you should replace it with your data
     ];
     setSeries([{ ...series[0], data: newData }]);
   };
 
   // Handle dropdown item click for week
-  const handleWeekItemClick = (week) => {
+  const handleWeekItemClick = week => {
     setSelectedWeek(week);
     updateChart();
   };
 
   // Handle dropdown item click for month
-  const handleMonthItemClick = (month) => {
+  const handleMonthItemClick = month => {
     setSelectedMonth(month);
     updateChart();
   };
 
   // Handle dropdown item click for year
-  const handleYearItemClick = (year) => {
+  const handleYearItemClick = year => {
     setSelectedYear(year);
     updateChart();
   };
 
   return (
     <div>
-      <div className='d-flex justify-content-between align-items-center '>
-        <div>
-          <p>Emerge App Download</p>
-        </div>
-        <div className='d-flex'>
-          {/* Dropdown buttons */}
-          {/* Week */}
-          <div className='dropdown d-inline-block'>
-            <button
-              className=' d-flex justify-content-center align-items-center  px-3 py-2'
-              type='button'
-              id='weekDropdown'
-              data-bs-toggle='dropdown'
-              aria-expanded='false'
-              style={{
-                border: '1px solid #C54FE8',
-                borderRadius: '10px',
-              }}
-            >
-              <p
-                style={{
-                  color: '#000000',
-                  fontSize: '13px',
-                  fontWeight: '400',
-                }}
-                className='my-0'
-              >
-                {selectedWeek}
-              </p>
-              <img src='/Icon.svg' className='ms-3' alt='' />
-            </button>
-            <ul className='dropdown-menu' aria-labelledby='weekDropdown'>
-              {Array.from({ length: 5 }, (_, i) => (
-                <li key={i}>
-                  <button
-                    className='dropdown-item'
-                    onClick={() => handleWeekItemClick(`Week ${i + 1}`)}
-                  >
-                    Week {i + 1}
-                  </button>
-                </li>
-              ))}
-            </ul>
+      <Row>
+        {/* <div className='d-flex justify-content-between align-items-center '> */}
+        <Col xs={12} md={6}>
+          <div>
+            <p>Emerge App Download</p>
           </div>
-          {/* Month */}
-          <div className='dropdown d-inline-block ms-3'>
-            <button
-              type='button'
-              id='monthDropdown'
-              data-bs-toggle='dropdown'
-              aria-expanded='false'
-              className='d-flex d-flex justify-content-center align-items-center px-3 py-2 ms-3 btn dropdown-toggle'
-              style={{
-                border: '1px solid #C54FE8',
-                borderRadius: '10px',
-              }}
-            >
-              <p
+        </Col>
+        <Col xs={12} md={6}>
+          <div className='d-flex'>
+            {/* Dropdown buttons */}
+            {/* Week */}
+            <div className='dropdown d-inline-block'>
+              <button
+                className=' d-flex justify-content-center align-items-center dropdown-toggle md-px-3 md-py-2 px-2 py-1'
+                type='button'
+                id='weekDropdown'
+                data-bs-toggle='dropdown'
+                aria-expanded='false'
                 style={{
-                  color: '#000000',
-                  fontSize: '13px',
-                  fontWeight: '400',
+                  border: '1px solid #C54FE8',
+                  borderRadius: '10px',
                 }}
-                className='my-0'
               >
-                {selectedMonth}
-              </p>
-              <img src='/Icon.svg' className='ms-3' alt='' />
-            </button>
-            <ul className='dropdown-menu' aria-labelledby='monthDropdown'>
-              {[
-                'Jan',
-                'Feb',
-                'Mar',
-                'Apr',
-                'May',
-                'Jun',
-                'Jul',
-                'Aug',
-                'Sep',
-                'Oct',
-                'Nov',
-                'Dec',
-              ].map((month, index) => (
-                <li key={index}>
-                  <button
-                    className='dropdown-item'
-                    onClick={() => handleMonthItemClick(month)}
-                  >
-                    {month}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </div>
-          {/* Year */}
-          <div className='dropdown d-inline-block ms-3'>
-            <button
-              type='button'
-              id='yearDropdown'
-              aria-expanded='false'
-              className='d-flex d-flex justify-content-center align-items-center px-3 py-2 ms-3 btn  dropdown-toggle'
-              style={{
-                border: '1px solid #C54FE8',
-                borderRadius: '10px',
-              }}
-            >
-              <p
+                <p
+                  style={{
+                    color: '#000000',
+                    fontSize: '13px',
+                    fontWeight: '400',
+                  }}
+                  className='my-0'
+                >
+                  {selectedWeek}
+                </p>
+                <img src='/Icon.svg' className='ms-3' alt='' />
+              </button>
+              <ul className='dropdown-menu' aria-labelledby='weekDropdown'>
+                {Array.from({ length: 5 }, (_, i) => (
+                  <li key={i}>
+                    <button
+                      className='dropdown-item'
+                      onClick={() => handleWeekItemClick(`Week ${i + 1}`)}
+                    >
+                      Week {i + 1}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            {/* Month */}
+            <div className='dropdown d-inline-block ms-3'>
+              <button
+                type='button'
+                id='monthDropdown'
+                data-bs-toggle='dropdown'
+                aria-expanded='false'
+                className='d-flex d-flex justify-content-center align-items-center  ms-3 btn  dropdown-toggle md-px-3 md-py-2 px-2 py-1'
                 style={{
-                  color: '#000000',
-                  fontSize: '13px',
-                  fontWeight: '400',
+                  border: '1px solid #C54FE8',
+                  borderRadius: '10px',
                 }}
-                className='my-0'
               >
-                {selectedYear}
-              </p>
-              <img src='/Icon.svg' className='ms-3' alt='' />
-            </button>
-            <ul className='dropdown-menu' aria-labelledby='yearDropdown'>
-              {Array.from({ length: 5 }, (_, i) => (
-                <li key={i}>
-                  <button
-                    className='dropdown-item'
-                    onClick={() => handleYearItemClick(`201${i + 3}`)}
-                  >
-                    201{i + 3}
-                  </button>
-                </li>
-              ))}
-            </ul>
+                <p
+                  style={{
+                    color: '#000000',
+                    fontSize: '13px',
+                    fontWeight: '400',
+                  }}
+                  className='my-0'
+                >
+                  {selectedMonth}
+                </p>
+                <img src='/Icon.svg' className='ms-3' alt='' />
+              </button>
+              <ul className='dropdown-menu' aria-labelledby='monthDropdown'>
+                {[
+                  'Jan',
+                  'Feb',
+                  'Mar',
+                  'Apr',
+                  'May',
+                  'Jun',
+                  'Jul',
+                  'Aug',
+                  'Sep',
+                  'Oct',
+                  'Nov',
+                  'Dec',
+                ].map((month, index) => (
+                  <li key={index}>
+                    <button
+                      className='dropdown-item'
+                      onClick={() => handleMonthItemClick(month)}
+                    >
+                      {month}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            {/* Year */}
+            <div className='dropdown d-inline-block ms-3'>
+              <button
+                type='button'
+                id='yearDropdown'
+                aria-expanded='false'
+                className='d-flex d-flex justify-content-center align-items-center  ms-3 btn   dropdown-toggle md-px-3 md-py-2 px-2 py-1'
+                style={{
+                  border: '1px solid #C54FE8',
+                  borderRadius: '10px',
+                }}
+              >
+                <p
+                  style={{
+                    color: '#000000',
+                    fontSize: '13px',
+                    fontWeight: '400',
+                  }}
+                  className='my-0'
+                >
+                  {selectedYear}
+                </p>
+                <img src='/Icon.svg' className='ms-3' alt='' />
+              </button>
+              <ul className='dropdown-menu' aria-labelledby='yearDropdown'>
+                {Array.from({ length: 5 }, (_, i) => (
+                  <li key={i}>
+                    <button
+                      className='dropdown-item'
+                      onClick={() => handleYearItemClick(`201${i + 3}`)}
+                    >
+                      201{i + 3}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-        </div>
-      </div>
+        </Col>
+        {/* </div> */}
+      </Row>
 
       {/* Line Chart */}
       <div>

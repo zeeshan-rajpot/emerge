@@ -3,103 +3,52 @@ import All from './All';
 import Active from './Active';
 import Cancelled from './Cancelled';
 import Complete from './Complete';
+import './taborder.css'; // Import your CSS file for styling
 
 const Tabbtnorder = () => {
-    const [selectedTab, setSelectedTab] = useState('All');
+  const [selectedTab, setSelectedTab] = useState('All');
 
-    const handleTabClick = (tabName) => {
-        setSelectedTab(tabName);
-    };
-    
-    return (
-        <>
-            <div className=" d-flex justify-content-start align-items-center border-bottom">
-                <p
-                    className="mb-0"
-                    style={{
-                        height: '35px',
-                        textAlign: 'center',
-                        borderBottom: selectedTab === 'All' ? '0.1rem solid #C54FE8 ' : '',
-                        border: 'none',
-                    }}
-                    onClick={() => handleTabClick('All')}
-                >
-                    All (1200)
-                </p>
-                <p
-                          className="mb-0"
-                    style={{
-                        height: '35px',
-                        textAlign: 'center',
-                        borderBottom: selectedTab === 'Active' ? '0.1rem solid #C54FE8 ' : '#fff',
-                        border: 'none',
-                        marginLeft: '10px',
-                    }}
-                    onClick={() => handleTabClick('Active')}
-                >
-                    Active
-                </p>
-                <p
-                          className="mb-0"
-                    style={{
-                        height: '35px',
-                        textAlign: 'center',
-                        borderBottom: selectedTab === 'Completed' ? '0.1rem solid #C54FE8  ' : '#fff',
-                        border: 'none',
-                        marginLeft: '10px',
-                    }}
-                    onClick={() => handleTabClick('Completed')}
-                >
-                    Completed
-                </p>
+  const handleTabClick = tabName => {
+    setSelectedTab(tabName);
+  };
 
-                <p
-                          className="mb-0"
-                    style={{
-                        height: '35px',
-                        textAlign: 'center',
-                        borderBottom: selectedTab === 'Cancelled' ? '0.1rem solid #C54FE8  ' : '#fff',
-                        border: 'none',
-                        marginLeft: '10px',
-                    }}
-                    onClick={() => handleTabClick('Cancelled')}
-                >
-                    Cancelled
-                </p>
+  return (
+    <>
+      <div className='tab-bar-container'>
+        <p
+          className={`tab-btn ${selectedTab === 'All' && 'active'}`}
+          onClick={() => handleTabClick('All')}
+        >
+          All (1200)
+        </p>
+        <p
+          className={`tab-btn ${selectedTab === 'Active' && 'active'}`}
+          onClick={() => handleTabClick('Active')}
+        >
+          Active
+        </p>
+        <p
+          className={`tab-btn ${selectedTab === 'Completed' && 'active'}`}
+          onClick={() => handleTabClick('Completed')}
+        >
+          Completed
+        </p>
+        <p
+          className={`tab-btn ${selectedTab === 'Cancelled' && 'active'}`}
+          onClick={() => handleTabClick('Cancelled')}
+        >
+          Cancelled
+        </p>
+      </div>
 
-
-                {/*  */}
-            </div>
-
-            <div>
-                {selectedTab === 'All' ? (
-                    <>
-                        {/* Render All component */}
-                        <All />
-                        
-                    </>
-                ) : selectedTab === 'Active' ? (
-                    <>
-                        {/* Render Active component */}
-                        <Active />
-                        
-                    </>
-                ) : selectedTab === 'Completed' ? (
-                    <>
-                        {/* Render Completed component */}
-                        <Complete />
-                        
-                    </>
-                ): (
-                    <>
-                        {/* Render Completed component */}
-                        <Cancelled />
-                        
-                    </>
-                )}
-            </div>
-        </>
-    );
+      <div>
+        {selectedTab === 'All' && <All />}
+        {selectedTab === 'Active' && <Active />}
+        {selectedTab === 'Completed' && <Complete />}
+        {selectedTab === 'Cancelled' && <Cancelled />}
+      </div>
+    </>
+  );
 };
 
 export default Tabbtnorder;

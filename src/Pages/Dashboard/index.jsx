@@ -24,7 +24,14 @@ const Dashboard = () => {
               <NavBar className='' />
             </Row>
             <Row>
-              <Col md={12} style={{ height: '100vh', overflowY: 'auto' }}>
+              <Col
+                md={12}
+                style={{
+                  height: '100vh',
+                  overflowY: 'auto',
+                  overflowX: 'hidden',
+                }}
+              >
                 <Row>
                   <Col lg={3} xl={3} md={3}>
                     <CardsDetails
@@ -65,18 +72,18 @@ const Dashboard = () => {
                 </Row>
 
                 <Row className='my-4'>
-                  <Col xs={8} md={8}>
+                  <Col xs={12} md={8}>
                     <MainLineChart />
                   </Col>
-                  <Col xs={4} md={4}>
+                  <Col xs={12} md={4}>
                     <MainDonutChart />
                   </Col>
                 </Row>
                 <Row>
-                  <Col xs={5} md={5}>
+                  <Col xs={12} md={6}>
                     <LocationMap />
                   </Col>
-                  <Col xs={6} md={6}>
+                  <Col xs={12} md={6}>
                     <Mostviwedpost />
                   </Col>
                 </Row>

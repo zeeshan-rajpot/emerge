@@ -1,0 +1,22 @@
+@media (max-width: 576px) {
+  .dropdown-toggle p {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .dropdown-toggle p {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 769px) {
+  .dropdown-toggle p {
+    font-size: 13px;
+  }
+}
+
+body {
+  overflow-x: auto; /* Allow horizontal scrolling */
+  overflow-y: hidden; /* Hide vertical overflow */
+}
