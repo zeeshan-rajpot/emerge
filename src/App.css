@@ -121,6 +121,22 @@ p {}
   .apexcharts-legend.apx-legend-position-left {
     display: none !important;
   }
+
+
+  .ressearch {
+    padding: 4px !important;
+  }
+
+  .resnoti {
+    height: 60px !important;
+    width: 60px !important;
+  }
+
+
+
+
+
+
 }
 
 /* Media query for screens smaller than 576px */
@@ -137,6 +153,18 @@ p {}
   .reswidth {
     width: 100% !important;
   }
+
+  .resnoti {
+    height: 60px !important;
+    width: 60px !important;
+  }
+
+  .ressearch {
+    padding: 4px !important;
+  }
+
+
+
 
   .apexcharts-legend.apx-legend-position-bottom.apexcharts-align-left,
   .apexcharts-legend.apx-legend-position-top.apexcharts-align-left,
