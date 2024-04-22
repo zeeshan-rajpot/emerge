@@ -7,6 +7,13 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+}
+
+
+
 #root {}
 
 .pricolor {
@@ -19,6 +26,10 @@
 
 .pribg {
   background-color: #C54FE8 !important;
+}
+
+.mostpribg {
+  background-color: #F0E5F7 !important;
 }
 
 .input-container {
@@ -66,3 +77,99 @@ a {
 }
 
 p {}
+
+
+@media only screen and (max-width: 600px) {
+  .mob {
+    display: none !important;
+  }
+
+  .reswidth {
+    width: 100% !important;
+  }
+
+  .resbtnwid {
+    width: 50% !important;
+  }
+
+  .apexcharts-legend.apx-legend-position-bottom.apexcharts-align-left,
+  .apexcharts-legend.apx-legend-position-top.apexcharts-align-left,
+  .apexcharts-legend.apx-legend-position-right,
+  .apexcharts-legend.apx-legend-position-left {
+    display: none !important;
+  }
+
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+  }
+
+  .reswidth {
+    width: 100% !important;
+  }
+
+  .tabreswid {
+    width: 10% !important;
+  }
+
+  .apexcharts-legend.apx-legend-position-bottom.apexcharts-align-left,
+  .apexcharts-legend.apx-legend-position-top.apexcharts-align-left,
+  .apexcharts-legend.apx-legend-position-right,
+  .apexcharts-legend.apx-legend-position-left {
+    display: none !important;
+  }
+
+
+  .ressearch {
+    padding: 4px !important;
+  }
+
+  .resnoti {
+    height: 60px !important;
+    width: 60px !important;
+  }
+
+
+
+
+
+
+}
+
+/* Media query for screens smaller than 576px */
+@media (max-width: 576px) {
+  body {
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+  }
+
+  .tabreswid {
+    width: 10% !important;
+  }
+
+  .reswidth {
+    width: 100% !important;
+  }
+
+  .resnoti {
+    height: 60px !important;
+    width: 60px !important;
+  }
+
+  .ressearch {
+    padding: 4px !important;
+  }
+
+
+
+
+  .apexcharts-legend.apx-legend-position-bottom.apexcharts-align-left,
+  .apexcharts-legend.apx-legend-position-top.apexcharts-align-left,
+  .apexcharts-legend.apx-legend-position-right,
+  .apexcharts-legend.apx-legend-position-left {
+    display: none !important;
+  }
+}

@@ -3,9 +3,10 @@ import Magzine from './AllMagzine.jsx';
 import Music from './Music.jsx';
 import Documentary from './Documentary';
 import Merchandise from './Merchandise';
+import './tabbtnor.css'; // Import your CSS file for styling
 
 const Tabbtnorder = () => {
-  const [selectedTab, setSelectedTab] = useState('AlMagazine');
+  const [selectedTab, setSelectedTab] = useState('AllMagzine');
 
   const handleTabClick = tabName => {
     setSelectedTab(tabName);
@@ -13,89 +14,44 @@ const Tabbtnorder = () => {
 
   return (
     <>
-      <div className='mt-4 d-flex justify-content-start align-items-center border-bottom'>
+      <div className='tab-bar-container'>
         <p
-          className='mb-0'
-          style={{
-            height: '35px',
-            textAlign: 'center',
-            borderBottom:
-              selectedTab === 'AllMagzine' ? '0.1rem solid #C54FE8 ' : '',
-            border: 'none',
-          }}
+          className={`tab-btn ${selectedTab === 'AllMagzine' && 'active'}`}
           onClick={() => handleTabClick('AllMagzine')}
         >
-          Magzine
+          Magazine
         </p>
         <p
-          className='mb-0'
-          style={{
-            height: '35px',
-            textAlign: 'center',
-            borderBottom:
-              selectedTab === 'Music' ? '0.1rem solid #C54FE8 ' : '#fff',
-            border: 'none',
-            marginLeft: '10px',
-          }}
+          className={`tab-btn ms-0 ms-md-3  ${
+            selectedTab === 'Music' && 'active'
+          }`}
           onClick={() => handleTabClick('Music')}
         >
           Music
         </p>
         <p
-          className='mb-0'
-          style={{
-            height: '35px',
-            textAlign: 'center',
-            borderBottom:
-              selectedTab === 'Documentary' ? '0.1rem solid #C54FE8  ' : '#fff',
-            border: 'none',
-            marginLeft: '10px',
-          }}
+          className={`tab-btn  ms-0 ms-md-3 ${
+            selectedTab === 'Documentary' && 'active'
+          }`}
           onClick={() => handleTabClick('Documentary')}
         >
           Documentary
         </p>
-
         <p
-          className='mb-0'
-          style={{
-            height: '35px',
-            textAlign: 'center',
-            borderBottom:
-              selectedTab === 'Merchandise' ? '0.1rem solid #C54FE8  ' : '#fff',
-            border: 'none',
-            marginLeft: '10px',
-          }}
+          className={`tab-btn  ms-0 ms-md-3 ${
+            selectedTab === 'Merchandise' && 'active'
+          }`}
           onClick={() => handleTabClick('Merchandise')}
         >
           Merchandise
         </p>
-
-        {/*  */}
       </div>
 
       <div>
-        {selectedTab === 'AllMagzine' ? (
-          <>
-            {/* Render Magzine component */}
-            <Magzine />
-          </>
-        ) : selectedTab === 'Music' ? (
-          <>
-            {/* Render Music component */}
-            <Music />
-          </>
-        ) : selectedTab === 'Documentary' ? (
-          <>
-            {/* Render Merchandised component */}
-            <Documentary />
-          </>
-        ) : (
-          <>
-            {/* Render Merchandised component */}
-            <Merchandise />
-          </>
-        )}
+        {selectedTab === 'AllMagzine' && <Magzine />}
+        {selectedTab === 'Music' && <Music />}
+        {selectedTab === 'Documentary' && <Documentary />}
+        {selectedTab === 'Merchandise' && <Merchandise />}
       </div>
     </>
   );

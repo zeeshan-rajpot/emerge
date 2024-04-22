@@ -1,0 +1,28 @@
+/* styles.css */
+.tab-bar-container {
+  display: flex;
+  align-items: center;
+}
+
+.tab-btn {
+  margin: 0;
+  padding: 10px;
+  cursor: pointer;
+  transition: border-bottom 0.3s ease;
+}
+
+.tab-btn.active {
+  border-bottom: 0.1rem solid #C54FE8;
+}
+
+@media screen and (max-width: 768px) {
+  .tab-bar-container {
+    flex-wrap: wrap;
+  }
+
+  .tab-btn {
+    flex: 1 0 50%;
+    /* Adjust as needed */
+    margin: 5px;
+  }
+}

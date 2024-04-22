@@ -17,16 +17,24 @@ const index = () => {
           <Col xs={2} md={2} className=' ps-0'>
             <Sidebar activeTab='Support' />
           </Col>
-          <Col xs={10} md={10} style={{ backgroundColor: '#FAFBFF' }}>
+          <Col
+            xs={10}
+            md={10}
+            style={{
+              backgroundColor: '#FAFBFF',
+              height: '100vh',
+              overflowY: 'auto',
+              overflowX: 'hidden',
+            }}
+          >
             <Row>
               <NavBar className='' />
             </Row>
             <Row>
               <Col
                 md={12}
-                // className=' bg-white  rounded-5'
               >
-                <div className='shadow m-3 rounded-4 bg-white  mt-4'>
+                <div className='shadow mb-3 mx-3 rounded-4 bg-white  '>
                   {!isConfirmed && (
                     <div>
                       <div
