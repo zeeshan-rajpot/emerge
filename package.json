@@ -10,16 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD
     "apexcharts": "^3.48.0",
     "bootstrap": "^5.3.3",
-=======
     "apexcharts": "^3.47.0",
     "bootstrap": "^5.3.3",
     "d3-array": "^3.2.4",
     "d3-fetch": "^3.0.1",
     "d3-scale": "^4.0.2",
->>>>>>> cfbd9e3955a42140453b023ba28d865a5a41853a
     "react": "^18.2.0",
     "react-apexcharts": "^1.4.1",
     "react-bootstrap": "^2.10.1",

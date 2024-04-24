@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom';
 export const index = () => {
   return (
     <div>
-      <Container>
-        <Row className='py-5'>
+      <Container className='mt-5'>
+        <Row className=''>
           <Col lg={6} md={6} xl={6} xs={12}>
             <div
-              className='shadow py-5'
+              className='shadow py-5 '
               style={{
                 backgroundColor: '#FFFFFF',
                 borderRadius: '43px',
