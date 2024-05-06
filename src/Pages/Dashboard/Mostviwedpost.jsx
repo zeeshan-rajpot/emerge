@@ -56,6 +56,7 @@ const Mostviwedpost = () => {
                     alt='Example'
                     width='46'
                     height='46'
+                    className='me-2'
                   />
                   {row.MostViewedPosts}
                 </td>

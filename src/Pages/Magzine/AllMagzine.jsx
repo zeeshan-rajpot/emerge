@@ -97,7 +97,7 @@ const AllMagzine = () => {
     <>
       <Container>
         <Row>
-          <Col md={12} className='p-0  mt-3'>
+          <Col md={12} className='p-0 mt-3'>
             <div className='table-responsive'>
               <Table>
                 <thead className='pribg'>

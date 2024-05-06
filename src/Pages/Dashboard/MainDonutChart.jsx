@@ -16,7 +16,7 @@ export const MainDonutChart = () => {
         foreColor: '#000',
       },
       style: {
-        fontSize: '10px',
+        fontSize: '12px',
         width: '44px',
         height: '44px',
         fontWeight: '400',
@@ -47,7 +47,7 @@ export const MainDonutChart = () => {
             total: {
               show: true,
               showAlways: true,
-              fontSize: '44px',
+              fontSize: '28px',
               fontFamily: 'Arial, sans-serif',
               fontWeight: 'bold',
               color: '#000', // Color of the total value
@@ -69,7 +69,7 @@ export const MainDonutChart = () => {
         options={chartOptions}
         series={chartSeries}
         type='donut'
-        width='380'
+        height={350}
       />
     </div>
   );

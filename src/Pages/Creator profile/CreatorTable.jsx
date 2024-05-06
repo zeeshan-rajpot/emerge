@@ -179,7 +179,7 @@ const CreatorTable = () => {
           >
             <b>
               {' '}
-              Total Emerge Profile{' '}
+              Total Creator Profile{' '}
               <span className='text-secaondry'>(56,251) </span>
             </b>
           </Col>
@@ -246,6 +246,7 @@ const CreatorTable = () => {
                           alt='Example'
                           width='20'
                           height='20'
+                          className='me-2'
                         />
                         {row.profileName}
                       </td>

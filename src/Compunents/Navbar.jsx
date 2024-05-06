@@ -31,7 +31,7 @@ const NavBar = () =>
   return (
     <>
       <Col
-        className='d-flex align-items-center justify-content-between pt-2 pb-3 flex-wrap bg-light'
+        className='d-flex align-items-center justify-content-between py-2 px-4 flex-wrap bg-light'
         style={ { background: '#FFFFFF' } }
       >
         <div>
@@ -40,10 +40,8 @@ const NavBar = () =>
           <p className=' mb-0'>{ formattedDateTime }</p>
         </div>
 
-        <div className='me-3 d-flex align-items-center '>
+        <div className='d-flex align-items-center justify-content-end'>
           <div className='input-container shadow bg-light rounded-5 ressearch'>
-            {/* <FaUser className='icon' /> */ }
-
             <input
               type='text'
               name='email'
@@ -56,9 +54,9 @@ const NavBar = () =>
           <Link to='/Notification'>
             <img src='/Component 11 – 1.svg' className='resnoti' />
           </Link>
-          <div className='mob'>
+          <div className='mob d-flex gap-2 justify-content-center align-items-center'>
             <img src='/Group 67873.svg' alt='' />
-            <span> William</span>
+            <div className='name'>William</div>
           </div>
         </div>
       </Col>

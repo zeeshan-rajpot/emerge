@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 
 export const index = () => {
   return (
-    <div>
+    <div className='vh-100 overflow-auto'>
       <Container>
-        <Row className='py-5'>
+        <Row className='d-flex justify-content-center align-items-center py-5'>
           <Col lg={6} md={6} xl={6} xs={12}>
             <div
-              className='shadow py-5'
+              className='shadow pt-4 w-100'
               style={{
                 backgroundColor: '#FFFFFF',
                 borderRadius: '43px',

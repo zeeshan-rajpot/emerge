@@ -9,7 +9,7 @@ const Notification = () => {
     <>
       <Container fluid>
         <Row>
-          <Col xs={2} md={2} className=' ps-0'>
+          <Col xs={2} md={2} className='p-0 pe-1'>
             <Sidebar activeTab='' />
           </Col>
           <Col

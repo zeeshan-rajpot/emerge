@@ -106,18 +106,18 @@ export const MainLineChart = () => {
     <div>
       <Row>
         {/* <div className='d-flex justify-content-between align-items-center '> */}
-        <Col xs={12} md={6}>
+        <Col xs={12} md={8}>
           <div>
             <p>Emerge App Download</p>
           </div>
         </Col>
-        <Col xs={12} md={6}>
+        <Col xs={12} md={8}>
           <div className='d-flex'>
             {/* Dropdown buttons */}
             {/* Week */}
             <div className='dropdown d-inline-block'>
               <button
-                className=' d-flex justify-content-center align-items-center dropdown-toggle md-px-3 md-py-2 px-2 py-1'
+                className='d-flex justify-content-center align-items-center dropdown-toggle md-px-3 md-py-2 px-2 py-1'
                 type='button'
                 id='weekDropdown'
                 data-bs-toggle='dropdown'

@@ -40,7 +40,7 @@ export const DonutChart = () => {
         options={chartOptions}
         series={chartSeries}
         type='donut'
-        width='200'
+        height={135}
       />
     </div>
   );

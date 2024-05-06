@@ -48,7 +48,7 @@ export const ColChart = () => {
   ];
   return (
     <div>
-      <Chart options={options} series={series} type='bar' height={150} />
+      <Chart options={options} series={series} type='bar' height={100}/>
     </div>
   );
 };

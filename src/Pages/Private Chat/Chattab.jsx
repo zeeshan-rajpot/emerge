@@ -16,7 +16,7 @@ const Chattab = () => {
   return (
     <>
       <div
-        className=' d-flex justify-content-center align-items-center shadow m-auto w-50 reswidth '
+        className='d-flex justify-content-center align-items-center shadow m-auto w-50 reswidth'
         style={{
           backgroundColor: '#FFFFFF',
           borderRadius: '22px',

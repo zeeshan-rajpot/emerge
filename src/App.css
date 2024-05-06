@@ -12,10 +12,6 @@ body {
   overflow-x: hidden !important;
 }
 
-
-
-#root {}
-
 .pricolor {
   color: #C54FE8 !important;
 }
@@ -35,10 +31,11 @@ body {
 .input-container {
   display: flex;
   align-items: center;
-  padding: 9px;
+  padding: 8px;
   /* border: 1px solid #ccc; */
   border-radius: 9px;
-  width: 80%;
+  width: 100%;
+  margin-top: -4px;
   text-align: center;
   /* margin-left: 10% !important; */
 }
@@ -75,8 +72,22 @@ a {
   color: black;
 
 }
+.resnoti{
+  width: 60px;
+  height: 60px;
+}
+.mob img{
+  width: 44px;
+  height: 44px;
+}
+.mob .name{
+  font-size: 12px;
+  font-weight: 500;
+}
 
-p {}
+.apexcharts-legend{
+  justify-content: center !important;
+}
 
 
 @media only screen and (max-width: 600px) {
@@ -172,4 +183,38 @@ p {}
   .apexcharts-legend.apx-legend-position-left {
     display: none !important;
   }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f4f5fa;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2E2E2E;
+  border-radius: 32px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2E2E2E;
+}
+
+.css-13cymwt-control,
+.css-t3ipsp-control {
+  background: #f4f4f4 !important;
+  border: none !important;
+  padding: 5px !important;
+  outline: none;
+}
+
+.inner .css-13cymwt-control,
+.inner .css-t3ipsp-control {
+  background: white !important;
+  border: none !important;
+  padding: 5px !important;
+  outline: none;
 }

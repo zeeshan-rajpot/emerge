@@ -233,6 +233,7 @@ const EmergeTable = () => {
                           alt='Example'
                           width='20'
                           height='20'
+                          className='me-2'
                         />
                         {row.profileName}
                       </td>

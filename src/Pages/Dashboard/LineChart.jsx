@@ -50,8 +50,7 @@ export const LineChart = () => {
       options={chartOptions}
       series={chartSeries}
       type='line'
-      width='150'
-      height={140}
+      height={100}
     />
   );
 };

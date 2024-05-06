@@ -4,8 +4,8 @@ const FeedReviews = ({ name, timestamp, review }) => {
   return (
     <>
       <Link to='/DetailPageFeedback'>
-        <div className='d-flex align-items-center justify-content-start border rounded-5 overflow-hidden mt-4 bg-white'>
-          <div className='p-4' style={{ background: '#C54FE8' }}>
+        <div className='d-flex align-items-center justify-content-start border rounded-5 mt-4 bg-white'>
+          <div className='p-4 rounded-5' style={{ background: '#C54FE8' }}>
             <img src='/smile.png' alt='' />
           </div>
           <div className='ms-2'>
